@@ -47,12 +47,6 @@ const Navbar: React.FC = () => {
           <button 
             onClick={() => setDarkMode(!darkMode)} 
             className="btn-theme-toggle"
-            style={{
-              background: 'none',
-              border: 'none',
-              cursor: 'pointer',
-              marginLeft: '1rem',
-            }}
             title={darkMode ? "Cambiar a Modo Claro" : "Cambiar a Modo Oscuro"}
           >
             {darkMode ? '☀️' : '🌙'}

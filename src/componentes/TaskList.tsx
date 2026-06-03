@@ -9,7 +9,7 @@ interface TaskListProps {
 }
 
 const TaskList: React.FC<TaskListProps> = ({ tasks, onToggle, onDelete }) => {
-  const [searchTerm, setSearchTerm] = useState<string>('');
+const [searchTerm, setSearchTerm] = useState<string>('');
 
   // Filtrado de tareas ignorando mayúsculas/minúsculas
   const filteredTasks = tasks.filter((task) =>
