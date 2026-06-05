@@ -1,14 +1,8 @@
 import axios from 'axios'
+import type { Task } from '../App'
 const api = axios.create({baseURL: 'http://localhost:3000',
 })
 
-
-export interface Task {
-  id: number
-  title: string
-  priority: string
-  completed: boolean
-}
 
 export const getTasks = () =>
   api.get<Task[]>('/tasks').then(r => r.data)
